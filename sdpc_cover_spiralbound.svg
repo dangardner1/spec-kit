@@ -88,13 +88,10 @@
   <text x="95" y="318"
         fill="#FDFBF7" font-size="46" font-weight="bold" letter-spacing="3.5"
         font-family="Georgia, serif" opacity="0.97">SAN DIEGO</text>
-  <text x="95" y="378"
-        fill="#FDFBF7" font-size="46" font-weight="bold" letter-spacing="3.5"
-        font-family="Georgia, serif" opacity="0.97">PSYCHO-</text>
-  <text x="95" y="438"
-        fill="#FDFBF7" font-size="46" font-weight="bold" letter-spacing="3.5"
-        font-family="Georgia, serif" opacity="0.97">ANALYTIC</text>
-  <text x="95" y="498"
+  <text x="95" y="398"
+        fill="#FDFBF7" font-size="42" font-weight="bold" letter-spacing="2.5"
+        font-family="Georgia, serif" opacity="0.97">PSYCHOANALYTIC</text>
+  <text x="95" y="472"
         fill="#FDFBF7" font-size="46" font-weight="bold" letter-spacing="3.5"
         font-family="Georgia, serif" opacity="0.97">CENTER</text>
 
