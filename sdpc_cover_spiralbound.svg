@@ -112,7 +112,7 @@
   <!-- ── YEAR RANGE ── -->
   <text x="95" y="650"
         fill="#FDFBF7" font-size="22" letter-spacing="10"
-        font-family="Georgia, serif" opacity="0.32">1960</text>
+        font-family="Georgia, serif" opacity="0.32">1970</text>
   <line x1="188" y1="643" x2="248" y2="643" stroke="#FDFBF7" stroke-width="0.7" opacity="0.22"/>
   <text x="258" y="650"
         fill="#FDFBF7" font-size="22" letter-spacing="10"
