@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Distiller — 80/20 summaries by Claude</title>
+  <meta name="description" content="Type any book. Get its core framework, 7 high-impact takeaways, and a practical plan — distilled live by Claude.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <!-- HOME / PROMPT -->
+    <div id="home">
+      <span class="eyebrow">Field Notes · Live 80/20 book distillations</span>
+      <h1>Distill any book in seconds.</h1>
+      <p class="home-sub">Type a title (or just a topic). Claude reads it down to the vital few: the core framework as an infographic, seven high-impact takeaways with real examples, and a practical way to put it to work.</p>
+      <form class="prompt" id="promptForm" autocomplete="off">
+        <input id="query" type="text" name="query" placeholder="e.g. Thinking, Fast and Slow" aria-label="Book title or topic" required>
+        <button type="submit" id="go">Distill →</button>
+      </form>
+      <div class="examples">
+        <span>Try</span>
+        <button class="chip" type="button">Atomic Habits</button>
+        <button class="chip" type="button">Zero to One</button>
+        <button class="chip" type="button">The Psychology of Money</button>
+        <button class="chip" type="button">Sapiens</button>
+      </div>
+      <p class="home-error hidden" id="homeError"></p>
+      <p class="home-note" id="homeNote"></p>
+    </div>
+
+    <!-- LOADING -->
+    <div id="loading" class="hidden">
+      <div class="spinner"></div>
+      <p class="status">Reading <b id="loadingTitle"></b> and finding the vital few…</p>
+    </div>
+
+    <!-- READER -->
+    <div id="reader" class="hidden"></div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

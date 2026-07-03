@@ -1,0 +1,16 @@
+{
+  "name": "book-distiller",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A live-AI web app that distills any book into an 80/20 field-notes summary using Claude.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0"
+  }
+}
