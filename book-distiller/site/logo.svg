@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <!-- Book Distiller mark: pages of a book distilled into a single drop -->
+  <g stroke="#0E8C72" stroke-linecap="round" fill="none">
+    <path d="M20 18 H76" stroke-width="8" opacity=".35"/>
+    <path d="M27 33 H69" stroke-width="8" opacity=".55"/>
+    <path d="M34 48 H62" stroke-width="8" opacity=".8"/>
+  </g>
+  <path d="M48 57 c5.5 7.5, 9 12, 9 16.5 a9 9 0 1 1 -18 0 c0 -4.5 3.5 -9 9 -16.5 z" fill="#0E8C72"/>
+</svg>

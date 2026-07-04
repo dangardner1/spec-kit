@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy — Book Distiller</title>
+  <meta name="description" content="Book Distiller's privacy policy: no accounts, no stored queries, no personal data collection.">
+  <link rel="canonical" href="https://book-distiller-theta.vercel.app/privacy.html">
+  <link rel="icon" href="/logo-badge.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap legal">
+    <div id="about">
+      <a class="back" href="/">← Home</a>
+      <span class="eyebrow">Legal</span>
+      <h1>Privacy</h1>
+      <p class="effective">Effective July 4, 2026</p>
+      <div class="legal-callout">
+        <b>The short version:</b> we don't want your data. No accounts, no cookies set by us,
+        no database — your queries are not saved on our servers.
+      </div>
+    </div>
+
+    <section>
+      <h2>What we collect: nothing personal</h2>
+      <p>Book Distiller has no sign-up, no login, and asks for no name, email, or payment details. There is no user database because there are no users to store.</p>
+    </section>
+
+    <section>
+      <h2>What happens to a query</h2>
+      <p>When you distill a book, the title you typed travels over HTTPS to our server, which forwards it to <b>Anthropic</b> (the maker of Claude) to generate the summary. If you press Listen and AI narration is enabled, the summary text is sent to <b>OpenAI</b> to synthesize audio. These providers process the text to produce a response, subject to their own privacy policies.</p>
+      <p>Generated summaries are kept briefly in server <b>memory</b> (up to 24 hours) so that repeat requests for the same book are instant. This cache is never written to disk or a database, is not linked to you in any way, and evaporates automatically.</p>
+    </section>
+
+    <section>
+      <h2>What stays on your device</h2>
+      <p>The "Recent" list on the home page is stored in your browser's local storage — on your device only. It never leaves your browser and we cannot see it. Clear it anytime through your browser's site-data settings.</p>
+    </section>
+
+    <section>
+      <h2>Analytics</h2>
+      <p>The site uses <b>Vercel Web Analytics</b>, a privacy-friendly, cookie-free analytics service that reports anonymous, aggregated page-view counts (e.g., how many people visited today, from which country). It does not use cookies, does not fingerprint you, and does not track you across other sites.</p>
+    </section>
+
+    <section>
+      <h2>Server logs</h2>
+      <p>Our hosting platform (Vercel) keeps standard, short-lived operational logs used only for debugging and abuse prevention. These may transiently include query text and IP addresses, are never linked to an identity, and expire automatically per the platform's retention policy.</p>
+    </section>
+
+    <section>
+      <h2>Third parties</h2>
+      <p>The only parties that process any data are: <b>Anthropic</b> (summary generation), <b>OpenAI</b> (optional narration), and <b>Vercel</b> (hosting and anonymous analytics). We sell nothing to anyone — there is nothing to sell.</p>
+    </section>
+
+    <section>
+      <h2>Affiliate links</h2>
+      <p>Each distillation shows a link to buy the full book from a retailer (such as Amazon or Bookshop.org). These are <b>affiliate links</b> — a plain outbound link carrying only the book's title in the URL and an affiliate tag, so we may earn a small commission on a purchase. They set no tracking on our end and share nothing you typed. Whether you click is entirely up to you.</p>
+    </section>
+
+    <section>
+      <h2>Changes &amp; contact</h2>
+      <p>If this policy changes, the effective date above will be updated. Questions? Use the <a href="/feedback.html">Feedback</a> page.</p>
+    </section>
+
+    <footer class="sitefoot">
+      <span>© 2026 Book Distiller · Dan Gardner, MD</span>
+      <nav class="sitefoot-links">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/feedback.html">Feedback</a>
+        <a class="coffee-link" href="https://www.buymeacoffee.com/dangardner" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

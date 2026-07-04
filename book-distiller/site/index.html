@@ -5,18 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Book Distiller — 80/20 summaries by Claude</title>
   <meta name="description" content="Type any book. Get its core framework, 7 high-impact takeaways, and a practical plan — distilled live by Claude.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
+  <link rel="canonical" href="https://book-distiller-theta.vercel.app/">
+  <link rel="icon" href="/logo-badge.svg" type="image/svg+xml">
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Book Distiller">
+  <meta property="og:title" content="Book Distiller — 80/20 summaries by Claude">
+  <meta property="og:description" content="Type any book. Get its core framework, 7 high-impact takeaways, and a practical plan — distilled live by Claude.">
+  <meta property="og:url" content="https://book-distiller-theta.vercel.app/">
+  <meta property="og:image" content="https://book-distiller-theta.vercel.app/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Book Distiller — 80/20 summaries by Claude">
+  <meta name="twitter:description" content="Type any book. Get its core framework, 7 takeaways, and a practical plan — distilled live by Claude.">
+  <meta name="twitter:image" content="https://book-distiller-theta.vercel.app/og.jpg">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <div class="wrap">
     <!-- HOME / PROMPT -->
     <div id="home">
+      <img class="brand-mark" src="/logo.svg" alt="Book Distiller logo" width="64" height="64">
       <span class="eyebrow">Field Notes · Live 80/20 book distillations</span>
       <h1>Distill any book in seconds.</h1>
       <p class="home-sub">Type a title (or just a topic). Claude reads it down to the vital few: the core framework as an infographic, seven high-impact takeaways with real examples, and a practical way to put it to work.</p>
+      <p class="distill-count hidden" id="distillCount"><b></b> books distilled so far</p>
       <form class="prompt" id="promptForm" autocomplete="off">
-        <input id="query" type="text" name="query" placeholder="e.g. Thinking, Fast and Slow" aria-label="Book title or topic" required>
+        <input id="query" type="text" name="query" placeholder="e.g. Thinking, Fast and Slow" aria-label="Book title or topic" maxlength="200" required>
         <button type="submit" id="go">Distill →</button>
       </form>
       <div class="examples">
@@ -26,7 +42,13 @@
         <button class="chip" type="button">The Psychology of Money</button>
         <button class="chip" type="button">Sapiens</button>
       </div>
+      <div class="examples recent hidden" id="recent"></div>
+      <div class="category-tip hidden" id="categoryTip">
+        <span>💡 Tip: type a category like "productivity" or "science fiction" to browse top picks instead of one book.</span>
+        <button type="button" id="categoryTipDismiss" aria-label="Dismiss tip">✕</button>
+      </div>
       <p class="home-error hidden" id="homeError"></p>
+      <button class="back hidden" id="homeRetry" type="button">↻ Try again</button>
       <p class="home-note" id="homeNote"></p>
     </div>
 
@@ -38,8 +60,23 @@
 
     <!-- READER -->
     <div id="reader" class="hidden"></div>
+
+    <footer class="sitefoot">
+      <span>© 2026 Book Distiller · Dan Gardner, MD</span>
+      <nav class="sitefoot-links">
+        <a href="/about.html">About</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/feedback.html">Feedback</a>
+        <a class="coffee-link" href="https://www.buymeacoffee.com/dangardner" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
+      </nav>
+    </footer>
   </div>
 
   <script src="/app.js"></script>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
